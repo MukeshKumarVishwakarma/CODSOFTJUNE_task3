@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="container">
+    <input id="screen" type="text">
+    <div class="buttons">
+    <table>
+        <tr>
+            <th><button onclick="appendTodisplay('7')"  >7</button></th>
+            <th><button onclick="appendTodisplay('8')" >8</button></th>
+            <th><button onclick="appendTodisplay('9')">9</button></th>
+            <th><button onclick="appendTodisplay('/')">/</button></th>
+        </tr>
+
+        <tr>
+                <th><button onclick="appendTodisplay('4')">4</button></th>
+                <th><button onclick="appendTodisplay('5')">5</button></th>
+                <th><button onclick="appendTodisplay('6')">6</button></th>
+                <th><button onclick="appendTodisplay('*')">x</button></th>
+        </tr>
+
+        <tr>
+            <th><button onclick="appendTodisplay('1')">1</button></th>
+            <th><button onclick="appendTodisplay('2')">2</button></th>
+            <th><button onclick="appendTodisplay('3')">3</button></th>
+            <th><button onclick="appendTodisplay('+')">+</button></th>
+        </tr>
+
+        <tr>
+            <th><button onclick="clearDisplay()">C</button></th>
+            <th><button onclick="calculateResult()">=</button></th>
+            <th><button onclick="appendTodisplay('0')">0</button></th>
+            <th><button onclick="appendTodisplay('-')">-</button></th>
+        </tr>
+    </table>
+    </div>
+    </div>
+</body>
+    <script src="Calculator.js"></script>
+</html>
